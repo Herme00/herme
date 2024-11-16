@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Herme Marketing - Contato e Projetos</title>
+    
+</head>
+<body>
+    <div class="menu-toggle">☰</div>
+    <aside class="sidebar">
+        <div class="logo-container">
+            <div class="logo">Herme Marketing</div>
+        </div>
+        <input type="text" class="search-box" placeholder="Buscar...">
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Visão Geral</a></li>
+            <li class="nav-item"><a href="projectos.html" class="nav-link">Projectos</a></li>
+            <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+            <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+            <li class="nav-item"><a href="servicos.html" class="nav-link">serviços</a></li>
+            <li class="nav-item"><a href="redes.html" class="nav-link">Redes Sociais</a></li>
+            <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+        </ul>
+    </aside>
+
+
+    <!-- Contato Page Content -->
+    <main class="main-content" id="contato-page" >
+        <h1 class="section-title">Entre em Contato</h1>
+        <p class="section-description">Estamos prontos para ajudar sua empresa a alcançar novos patamares.</p>
+
+        <div class="contact-form">
+            <form id="contactForm" action="https://formsubmit.co/hermemarketing@gmail.com" method="POST"> 
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Assunto</label>
+                    <input type="text" id="subject" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" class="form-control" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Enviar Mensagem</button>
+
+                <input type="hidden" name="_subject" value="Nova SMS">
+                <input type="text" name="_honey" style="display: none;">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h2>Outras Formas de Contato</h2>
+            <div class="contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"></path>
+                </svg>
+                <span>(+244) 930 060 830</span>
+            </div>
+            <div class="contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>hermemarketing@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Angola, Huambo, Huambo Cidade Baixa rua do Sol Nascente</span>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
